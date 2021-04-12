@@ -12,9 +12,19 @@ some thext with footnotne[^1]
 
 some other text
 
+~strike~
 
+~~strike~~
 
+*italic*
 
+**bold**
+
+_italic_
+
+__bold__
+
+==X^2^   X^a+b^==
 
 
 
