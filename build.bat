@@ -37,7 +37,7 @@ REM	./librarian.sh make %MKDLIB% VERSION %OBJS%
 %BUILD% -c mkdio.c -o mkdio.o 
 %BUILD% -c markdown.c -o markdown.o 
 %BUILD% -c dumptree.c -o dumptree.o 
-%BUILD% -c generate.c -o generate.o 
+%BUILD% -DTYPORA -c generate.c -o generate.o 
 %BUILD% -c resource.c -o resource.o 
 %BUILD% -c docheader.c -o docheader.o 
 %BUILD% -c version.c -o version.o 
@@ -91,3 +91,4 @@ REM	%LINK% -o makepage makepage.o %COMMON% -lmarkdown
 copy /y libmarkdown.a ..\..\src\hastyscribepkg\vendor\libmarkdown_windows_x64.a
 copy /y markdown.exe c:\MALT\MediaRepo\discount
 markdown.exe -ffootnotes test.md
+pause
